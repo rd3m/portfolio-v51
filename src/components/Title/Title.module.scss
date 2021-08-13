@@ -1,0 +1,37 @@
+@import "../../styles/variables.scss";
+@import "../../styles/typography.scss";
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+
+    &__text {
+        font-size: 35rem;
+        text-align: left;
+        color: $primary-color;
+        line-height: 25rem;
+        position: relative;
+        left: -3rem;
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

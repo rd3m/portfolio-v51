@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+@import "../../styles/typography.scss";
+
+.contact {
+    height: 100vw;
+    background-color: $background-color;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        color: $primary-color;
+        font-size: 4rem;
+    }
+
+    &__text {
+        color: $secondary-color;
+        width: 80vw;
+    }
+}
